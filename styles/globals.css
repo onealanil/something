@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&family=Oswald&family=Plus+Jakarta+Sans&family=Poppins&family=Roboto&family=Sanchez&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
