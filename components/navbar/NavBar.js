@@ -39,9 +39,7 @@ const NavBar = () => {
 
             {/* category  */}
             <span
-              className={`py-2 cursor-pointer flex items-center justify-center relative gap-x-2 ${
-                router.pathname == "/category" ? "text-green" : ""
-              }`}
+              className={`py-2 cursor-pointer flex items-center justify-center relative gap-x-2 `}
               onMouseEnter={() => {
                 setCategoryHover(true);
               }}
@@ -49,7 +47,14 @@ const NavBar = () => {
                 setCategoryHover(false);
               }}
             >
-              <Link href="/category">Category</Link>
+              <Link
+                href="/category"
+                className={`${
+                  router.pathname == "/category" ? "text-green" : ""
+                }`}
+              >
+                Category
+              </Link>
               <i>
                 <IoIosArrowDown />
               </i>
