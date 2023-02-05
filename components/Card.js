@@ -10,7 +10,8 @@ const Card = ({ props }) => {
             src={props.src}
             alt="card-image"
             layout="fill"
-            objectFit="contain"
+            objectFit="cover"
+            className="w-full h-full object-cover"
           />
         </div>
         <div className="p-4">

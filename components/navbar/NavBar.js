@@ -5,10 +5,13 @@ import { SiBuymeacoffee } from "react-icons/si";
 import { IoSearchCircleSharp } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
+import { IoIosArrowDown } from "react-icons/io";
 
 const NavBar = () => {
   const router = useRouter();
   const [toggleMobile, setToggleMobile] = useState(false);
+  const [categoryHover, setCategoryHover] = useState(false);
+  const [categoryClick, setCategoryClick] = useState(false);
 
   return (
     <>
@@ -33,13 +36,54 @@ const NavBar = () => {
             >
               <Link href="/">Home</Link>
             </span>
+
+            {/* category  */}
             <span
-              className={`py-2 cursor-pointer ${
+              className={`py-2 cursor-pointer flex items-center justify-center relative gap-x-2 ${
                 router.pathname == "/category" ? "text-green" : ""
               }`}
+              onMouseEnter={() => {
+                setCategoryHover(true);
+              }}
+              onMouseLeave={() => {
+                setCategoryHover(false);
+              }}
             >
               <Link href="/category">Category</Link>
+              <i>
+                <IoIosArrowDown />
+              </i>
+
+              {/* on hover effect  */}
+              {categoryHover ? (
+                <>
+                  <div className="absolute top-10 w-64 gap-y-2 p-5 flex flex-col items-center bg-opacity-90 rounded-md justify-center bg-nav-bg">
+                    <span className="text-sm hover:text-green">
+                      Micro Finance
+                    </span>
+                    <span className="text-sm hover:text-green">
+                      Retirement Plans
+                    </span>
+                    <span className="text-sm hover:text-green">
+                      IPO & Share Market
+                    </span>
+                    <span className="text-sm hover:text-green">Real State</span>
+                    <span className="text-sm hover:text-green">
+                      Tax Planning
+                    </span>
+                    <span className="text-sm hover:text-green">
+                      Cryptocurrency
+                    </span>
+                    <span className="text-sm hover:text-green">
+                      Investing 101
+                    </span>
+                  </div>
+                </>
+              ) : (
+                ""
+              )}
             </span>
+
             <span
               className={`py-2 cursor-pointer ${
                 router.pathname == "/about" ? "text-green" : ""
@@ -57,7 +101,9 @@ const NavBar = () => {
               <i>
                 <SiBuymeacoffee />
               </i>
-              <span className="font-navFont tracking-wide">Buy Me A Coffee</span>
+              <span className="font-navFont tracking-wide">
+                Buy Me A Coffee
+              </span>
             </span>
           </div>
         </div>
@@ -102,13 +148,55 @@ const NavBar = () => {
                 >
                   <Link href="/">Home</Link>
                 </span>
+
                 <span
-                  className={`py-2 cursor-pointer ${
+                  className={`${
+                    categoryClick ? "py-0" : "py-2"
+                  } cursor-pointer flex items-center justify-center gap-x-2 ${
                     router.pathname == "/category" ? "text-green" : ""
                   }`}
                 >
                   <Link href="/category">Category</Link>
+                  <i
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setCategoryClick((prev) => !prev);
+                    }}
+                  >
+                    <IoIosArrowDown />
+                  </i>
                 </span>
+                {/* on hover effect  */}
+                {categoryClick ? (
+                  <>
+                    <div className="gap-y-3 flex flex-col items-center bg-opacity-90 rounded-md justify-center bg-nav-bg">
+                      <span className="text-sm hover:text-green">
+                        Micro Finance
+                      </span>
+                      <span className="text-sm hover:text-green">
+                        Retirement Plans
+                      </span>
+                      <span className="text-sm hover:text-green">
+                        IPO & Share Market
+                      </span>
+                      <span className="text-sm hover:text-green">
+                        Real State
+                      </span>
+                      <span className="text-sm hover:text-green">
+                        Tax Planning
+                      </span>
+                      <span className="text-sm hover:text-green">
+                        Cryptocurrency
+                      </span>
+                      <span className="text-sm hover:text-green">
+                        Investing 101
+                      </span>
+                    </div>
+                  </>
+                ) : (
+                  ""
+                )}
+
                 <span
                   className={`py-2 cursor-pointer ${
                     router.pathname == "/about" ? "text-green" : ""

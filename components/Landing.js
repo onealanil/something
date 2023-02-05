@@ -19,6 +19,7 @@ const Landing = () => {
                   src="/images/bitcoincrashes.jpg"
                   alt="landing-photo"
                   layout="fill"
+                  objectFit="cover"
                   className="w-full h-full object-cover"
                 />
               </div>
