@@ -211,7 +211,7 @@ const NavBar = () => {
                 {/* for search div  */}
                 {searchBarMobile ? (
                   <>
-                    <div className="inset-0 z-50 w-[90%] flex items-center justify-center">
+                    <div className="inset-0 z-50 w-[90%] flex items-center justify-center mr-4">
                       <div className="relative w-auto my-6 mx-auto max-w-3xl">
                         <Search props={handleSearchFunctionMobile} />
                       </div>

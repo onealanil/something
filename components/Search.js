@@ -5,7 +5,7 @@ const Search = ({ props }) => {
   return (
     <>
       {/*content*/}
-      <div className="border-0 rounded-lg shadow-lg relative flex flex-col  md:w-full bg-white outline-none focus:outline-none">
+      <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
         {/*header*/}
         <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
           {/* search button */}
