@@ -6,12 +6,23 @@ import { IoSearchCircleSharp } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import { IoIosArrowDown } from "react-icons/io";
+import Search from "../Search";
 
 const NavBar = () => {
   const router = useRouter();
   const [toggleMobile, setToggleMobile] = useState(false);
   const [categoryHover, setCategoryHover] = useState(false);
   const [categoryClick, setCategoryClick] = useState(false);
+  const [searchBar, setSearchBar] = useState(false);
+  const [searchBarMobile, setSearchBarMobile] = useState(false);
+
+  const handleBoolValueChange = (newValue) => {
+    setSearchBar(newValue);
+  };
+
+  const handleSearchFunctionMobile = (newValue) => {
+    setSearchBarMobile(newValue);
+  };
 
   return (
     <>
@@ -96,12 +107,33 @@ const NavBar = () => {
             >
               <Link href="/about">About Me</Link>
             </span>
-            <span className="flex items-center justify-center gap-x-1 ml-[-10px] px-3 py-2 cursor-pointer">
+
+            {/* searchBar */}
+            <span
+              className="flex items-center justify-center gap-x-1 ml-[-10px] px-3 py-2 cursor-pointer"
+              onClick={() => {
+                setSearchBar(true);
+              }}
+            >
               <i className="">
                 <IoSearchCircleSharp size={25} />
               </i>
               <span>Search</span>
             </span>
+
+            {searchBar ? (
+              <>
+                <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none shadow-2xl">
+                  <div className="relative w-auto my-6 mx-auto max-w-3xl">
+                    <Search props={handleBoolValueChange} />
+                  </div>
+                </div>
+                <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+              </>
+            ) : (
+              ""
+            )}
+
             <span className="bg-green flex items-center justify-center gap-x-3 px-3 py-2 text-white rounded-md cursor-pointer">
               <i>
                 <SiBuymeacoffee />
@@ -135,7 +167,11 @@ const NavBar = () => {
         </div>
         {toggleMobile ? (
           <>
-            <div className="bg-nav-bg h-screen z-50 w-[70%] inset-y-0 fixed pb-3 pl-5 min-[937px]:hidden animate__animated animate__fadeInLeftBig">
+            <div
+              className={`bg-nav-bg h-screen z-50 ${
+                searchBarMobile ? "w-[100%]" : "w-[70%]"
+              } inset-y-0 fixed pb-3 pl-5 min-[937px]:hidden animate__animated animate__fadeInLeftBig`}
+            >
               <Link href="/">
                 <div className="ml-6 my-5 cursor-pointer">
                   <span className="font-navFont text-green font-bold text-xl">
@@ -171,6 +207,21 @@ const NavBar = () => {
                     <IoIosArrowDown />
                   </i>
                 </span>
+                
+                {/* for search div  */}
+                {searchBarMobile ? (
+                  <>
+                    <div className="inset-0 z-50 w-[90%] flex items-center justify-center">
+                      <div className="relative w-auto my-6 mx-auto max-w-3xl">
+                        <Search props={handleSearchFunctionMobile} />
+                      </div>
+                    </div>
+                    <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+                  </>
+                ) : (
+                  ""
+                )}
+
                 {/* on hover effect  */}
                 {categoryClick ? (
                   <>
@@ -209,12 +260,19 @@ const NavBar = () => {
                 >
                   <Link href="/about">About Me</Link>
                 </span>
-                <span className="flex items-center justify-center gap-x-1 ml-[-10px] py-3 cursor-pointer">
+
+                <span
+                  className="flex items-center justify-center gap-x-1 ml-[-10px] py-3 cursor-pointer"
+                  onClick={() => {
+                    setSearchBarMobile(true);
+                  }}
+                >
                   <i className="">
                     <IoSearchCircleSharp size={25} />
                   </i>
                   <span>Search</span>
                 </span>
+
                 <span className="bg-green flex items-center justify-center gap-x-3 px-3 py-2 text-white rounded-md cursor-pointer">
                   <i>
                     <SiBuymeacoffee />
