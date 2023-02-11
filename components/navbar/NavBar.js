@@ -5,7 +5,7 @@ import { SiBuymeacoffee } from "react-icons/si";
 import { IoSearchCircleSharp } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
-import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import Search from "../Search";
 
 const NavBar = () => {
@@ -66,9 +66,7 @@ const NavBar = () => {
               >
                 Category
               </Link>
-              <i>
-                <IoIosArrowDown />
-              </i>
+              <i>{categoryHover ? <IoIosArrowUp /> : <IoIosArrowDown />}</i>
 
               {/* on hover effect  */}
               {categoryHover ? (
@@ -204,10 +202,12 @@ const NavBar = () => {
                       setCategoryClick((prev) => !prev);
                     }}
                   >
-                    <IoIosArrowDown />
+                    <i>
+                      {categoryClick ? <IoIosArrowUp /> : <IoIosArrowDown />}
+                    </i>
                   </i>
                 </span>
-                
+
                 {/* for search div  */}
                 {searchBarMobile ? (
                   <>

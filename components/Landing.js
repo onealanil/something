@@ -1,6 +1,7 @@
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 import Image from "next/legacy/image";
+import Link from "next/link";
 
 const Landing = () => {
   return (
@@ -37,9 +38,11 @@ const Landing = () => {
                 at high prices in the hopes of turning a quick profit.
               </span>
               <div className="flex gap-x-4 items-center justify-center hover:text-green cursor-pointer pb-4">
-                <span className="font-hotTopicsFont font-bold">
-                  Read Full Article
-                </span>
+                <Link href="/single">
+                  <span className="font-hotTopicsFont font-bold">
+                    Read Full Article
+                  </span>
+                </Link>
                 <i>
                   <BsArrowRight />
                 </i>
