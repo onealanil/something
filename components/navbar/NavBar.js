@@ -72,25 +72,41 @@ const NavBar = () => {
               {categoryHover ? (
                 <>
                   <div className="absolute top-10 w-64 gap-y-2 p-5 flex flex-col items-center bg-opacity-90 rounded-md justify-center bg-nav-bg">
-                    <span className="text-sm hover:text-green">
-                      Micro Finance
-                    </span>
-                    <span className="text-sm hover:text-green">
-                      Retirement Plans
-                    </span>
-                    <span className="text-sm hover:text-green">
-                      IPO & Share Market
-                    </span>
-                    <span className="text-sm hover:text-green">Real State</span>
-                    <span className="text-sm hover:text-green">
-                      Tax Planning
-                    </span>
-                    <span className="text-sm hover:text-green">
-                      Cryptocurrency
-                    </span>
-                    <span className="text-sm hover:text-green">
-                      Investing 101
-                    </span>
+                    <Link href="/category/microfinance">
+                      <span className="text-sm hover:text-green">
+                        Micro Finance
+                      </span>
+                    </Link>
+                    <Link href="/category/retirementplan">
+                      <span className="text-sm hover:text-green">
+                        Retirement Plans
+                      </span>
+                    </Link>
+                    <Link href="/category/ipo&sharemarket">
+                      <span className="text-sm hover:text-green">
+                        IPO & Share Market
+                      </span>
+                    </Link>
+                    <Link href="/category/realestate">
+                      <span className="text-sm hover:text-green">
+                        Real Estate
+                      </span>
+                    </Link>
+                    <Link href="/category/taxplanning">
+                      <span className="text-sm hover:text-green">
+                        Tax Planning
+                      </span>
+                    </Link>
+                    <Link href="/category/cryptocurrency">
+                      <span className="text-sm hover:text-green">
+                        Cryptocurrency
+                      </span>
+                    </Link>
+                    <Link href="/category/investing101">
+                      <span className="text-sm hover:text-green">
+                        Investing 101
+                      </span>
+                    </Link>
                   </div>
                 </>
               ) : (
@@ -226,27 +242,41 @@ const NavBar = () => {
                 {categoryClick ? (
                   <>
                     <div className="gap-y-3 flex flex-col items-center bg-opacity-90 rounded-md justify-center bg-nav-bg">
-                      <span className="text-sm hover:text-green">
-                        Micro Finance
-                      </span>
-                      <span className="text-sm hover:text-green">
-                        Retirement Plans
-                      </span>
-                      <span className="text-sm hover:text-green">
-                        IPO & Share Market
-                      </span>
-                      <span className="text-sm hover:text-green">
-                        Real State
-                      </span>
-                      <span className="text-sm hover:text-green">
-                        Tax Planning
-                      </span>
-                      <span className="text-sm hover:text-green">
-                        Cryptocurrency
-                      </span>
-                      <span className="text-sm hover:text-green">
-                        Investing 101
-                      </span>
+                      <Link href="/category/microfinance">
+                        <span className="text-sm hover:text-green">
+                          Micro Finance
+                        </span>
+                      </Link>
+                      <Link href="/category/retirementplan">
+                        <span className="text-sm hover:text-green">
+                          Retirement Plans
+                        </span>
+                      </Link>
+                      <Link href="/category/ipo&sharemarket">
+                        <span className="text-sm hover:text-green">
+                          IPO & Share Market
+                        </span>
+                      </Link>
+                      <Link href="/category/realestate">
+                        <span className="text-sm hover:text-green">
+                          Real Estate
+                        </span>
+                      </Link>
+                      <Link href="/category/taxplanning">
+                        <span className="text-sm hover:text-green">
+                          Tax Planning
+                        </span>
+                      </Link>
+                      <Link href="/category/cryptocurrency">
+                        <span className="text-sm hover:text-green">
+                          Cryptocurrency
+                        </span>
+                      </Link>
+                      <Link href="/category/cryptocurrency">
+                        <span className="text-sm hover:text-green">
+                          Investing 101
+                        </span>
+                      </Link>
                     </div>
                   </>
                 ) : (
