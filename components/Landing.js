@@ -37,16 +37,16 @@ const Landing = () => {
                 sparked a frenzy of speculation, with many investors buying in
                 at high prices in the hopes of turning a quick profit.
               </span>
-              <div className="flex gap-x-4 items-center justify-center pb-4">
-                <Link href="/single">
-                  <span className="font-hotTopicsFont font-bold hover:text-green cursor-pointer">
+              <Link href="/single">
+                <div className="flex gap-x-4 items-center justify-center pb-4 hover:text-green cursor-pointer">
+                  <span className="font-hotTopicsFont font-bold ">
                     Read Full Article
                   </span>
-                </Link>
-                <i>
-                  <BsArrowRight />
-                </i>
-              </div>
+                  <i>
+                    <BsArrowRight />
+                  </i>
+                </div>
+              </Link>
             </div>
           </div>
           {/* left side end  */}

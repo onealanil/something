@@ -1,7 +1,11 @@
-import React from "react";
-import Image from "next/legacy/image";
+import React, { useEffect, useRef } from "react";
 
 const Quiz = () => {
+  const ref = useRef(null);
+  useEffect(() => {
+    import("@lottiefiles/lottie-player");
+  });
+
   return (
     <>
       <div className="w-[100%] flex items-center justify-center">
@@ -14,11 +18,18 @@ const Quiz = () => {
         <div className="w-[90%] flex md:flex-row flex-col">
           <div className="w-full md:w-[55%] flex items-center justify-start">
             <div>
-              <img src="/images/quiz.svg" alt="landing-photo" />
+              <lottie-player
+                id="firstLottie"
+                ref={ref}
+                autoplay
+                loop
+                mode="normal"
+                src="/quiz.json"
+              />
             </div>
           </div>
-          <div className="w-full md:w-[45%] flex items-center justify-center bg-yellow-400">
-            <div className="w-[90%] flex flex-col p-5 gap-y-4 md:gap-y-5 bg-blue-400">
+          <div className="w-full md:w-[45%] flex items-center justify-center">
+            <div className="w-[100%] flex flex-col p-5 gap-y-4 md:gap-y-5">
               <span className="font-hotTopicsFont leading-relaxed tracking-wide">
                 The quiz has been carefully designed to cover a range of topics,
                 including budgeting, saving, investing, and managing debt.
