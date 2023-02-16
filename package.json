@@ -10,12 +10,10 @@
   },
   "dependencies": {
     "@lottiefiles/lottie-player": "^1.7.1",
-    "lottie-web": "^5.10.2",
     "next": "13.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
-    "react-lottie": "^1.2.3",
     "react-router-dom": "^6.8.0",
     "react-share": "^4.4.1",
     "react-social-icons": "^5.15.0"
