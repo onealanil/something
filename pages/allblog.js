@@ -1,13 +1,8 @@
 import React from "react";
-import { useRouter } from "next/router";
-import Card from "../../components/Card";
+import Card from "../components/Card";
 import { BsFillPlusCircleFill } from "react-icons/bs";
-import { BiHomeAlt } from "react-icons/bi";
-import Link from "next/link";
 
-const SingleCategory = () => {
-  const router = useRouter();
-
+const blog = () => {
   const data = [
     {
       id: 1,
@@ -55,22 +50,13 @@ const SingleCategory = () => {
       data: "Making money with debt can be a risky strategy, but it can also be an effective way to generate returns if it's done in a good manner.",
     },
   ];
-
   return (
     <>
       <div className="mt-16 mb-4 w-full flex items-center justify-center">
         <div className="w-[90%]">
           <div className="flex gap-x-1 pt-3">
-            <span className="font-sideFont  text-[#CCCBCB]">
-              <Link href="/allblog">
-              <i className="cursor-pointer hover:text-green">
-                <BiHomeAlt size={20} />
-              </i>
-              </Link>
-            </span>
-            <span className="font-sideFont text-green capitalize">
-              {router.query.single}
-            </span>
+            <span className="font-sideFont">All</span>
+            <span className="font-sideFont text-green">Posts</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 my-4">
             {data.map((val) => {
@@ -89,4 +75,4 @@ const SingleCategory = () => {
   );
 };
 
-export default SingleCategory;
+export default blog;

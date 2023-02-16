@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import Category from "../../components/Category";
 import { FaBorderAll } from "react-icons/fa";
 

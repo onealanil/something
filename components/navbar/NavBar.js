@@ -72,6 +72,9 @@ const NavBar = () => {
               {categoryHover ? (
                 <>
                   <div className="absolute top-10 w-64 gap-y-2 p-5 flex flex-col items-center bg-opacity-90 rounded-md justify-center bg-nav-bg">
+                    <Link href="/allblog">
+                      <span className="text-sm hover:text-green">All</span>
+                    </Link>
                     <Link href="/category/microfinance">
                       <span className="text-sm hover:text-green">
                         Micro Finance
@@ -242,6 +245,9 @@ const NavBar = () => {
                 {categoryClick ? (
                   <>
                     <div className="gap-y-3 flex flex-col items-center bg-opacity-90 rounded-md justify-center bg-nav-bg">
+                      <Link href="/allblog">
+                        <span className="text-sm hover:text-green">All</span>
+                      </Link>
                       <Link href="/category/microfinance">
                         <span className="text-sm hover:text-green">
                           Micro Finance

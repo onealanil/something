@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./Card";
 import { BsArrowRight } from "react-icons/bs";
-
+import Link from "next/link";
 
 const HotPost = () => {
   const data = [
@@ -34,15 +34,18 @@ const HotPost = () => {
               return <Card key={val.id} props={val} />;
             })}
           </div>
-          <div className="flex gap-x-4 my-5 items-center justify-center hover:text-green cursor-pointer pb-4">
-            <span className="font-hotTopicsFont font-bold">
-              View More
-            </span>
-            <i>
-              <BsArrowRight />
-            </i>
-          </div>
+          <Link href="/allblog">
+            <div className="flex gap-x-4 my-5 items-center justify-center hover:text-green cursor-pointer pb-4">
+              <span className="font-hotTopicsFont font-bold">View More</span>
+              <i>
+                <BsArrowRight />
+              </i>
+            </div>
+          </Link>
         </div>
+      </div>
+      <div className="flex items-center justify-center">
+        <hr className="h-[2px] my-5 border-solid w-[90%] font-bold bg-gray-600"></hr>
       </div>
     </>
   );

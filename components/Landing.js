@@ -37,9 +37,9 @@ const Landing = () => {
                 sparked a frenzy of speculation, with many investors buying in
                 at high prices in the hopes of turning a quick profit.
               </span>
-              <div className="flex gap-x-4 items-center justify-center hover:text-green cursor-pointer pb-4">
+              <div className="flex gap-x-4 items-center justify-center pb-4">
                 <Link href="/single">
-                  <span className="font-hotTopicsFont font-bold">
+                  <span className="font-hotTopicsFont font-bold hover:text-green cursor-pointer">
                     Read Full Article
                   </span>
                 </Link>
@@ -112,12 +112,22 @@ const Landing = () => {
               </span>
               <span className="border border-b-gray-900"></span>
             </div>
+            {/* one component  */}
+            <div className="flex flex-col gap-y-2 cursor-pointer select-none">
+              <span className="font-sideFont text-sm text-green hover:text-black">
+                April 2
+              </span>
+              <span className="font-sideFont font-semibold leading-relaxed tracking-wide hover:text-green">
+                The Wealthy Investor: Strategies for building wealth
+              </span>
+              <span className="border border-b-gray-900"></span>
+            </div>
           </div>
           {/* right side end  */}
         </div>
       </div>
       <div className="flex items-center justify-center">
-        <hr className="h-[2px] my-8 border-solid w-[90%] font-bold bg-gray-600"></hr>
+        <hr className="h-[2px] my-5 border-solid w-[90%] font-bold bg-gray-600"></hr>
       </div>
     </>
   );
