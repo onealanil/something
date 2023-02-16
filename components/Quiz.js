@@ -17,11 +17,10 @@ const Quiz = () => {
               <img
                 src="/images/quiz.svg"
                 alt="landing-photo"
-                className="w-[35rem]"
               />
             </div>
           </div>
-          <div className="w-full md:w-[45%] flex flex-col items-start justify-center gap-y-4">
+          <div className="w-full md:w-[45%] flex flex-col items-start py-3 justify-center gap-y-4">
             <span className="font-hotTopicsFont leading-relaxed tracking-wide">
               The quiz has been carefully designed to cover a range of topics,
               including budgeting, saving, investing, and managing debt. Whether
@@ -33,7 +32,11 @@ const Quiz = () => {
               your financial skills and learn more about the areas where you
               need to focus your attention.
             </span>
-            <span className="py-3 px-5 bg-green font-hotTopicsFont text-white tracking-wide rounded-md cursor-pointer">Take a Quiz</span>
+            <div className="flex pb-5">
+              <span className="py-3 px-5 bg-green font-hotTopicsFont text-white tracking-wide rounded-md cursor-pointer">
+                Take a Quiz
+              </span>
+            </div>
           </div>
         </div>
       </div>
