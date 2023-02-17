@@ -28,7 +28,7 @@ const Quiz = () => {
               />
             </div>
           </div>
-          <div className="w-full md:w-[45%] flex items-center justify-center">
+          <div className="w-full md:w-[45%] flex">
             <div className="w-[100%] flex flex-col p-5 gap-y-4 md:gap-y-5">
               <span className="font-hotTopicsFont leading-relaxed tracking-wide">
                 The quiz has been carefully designed to cover a range of topics,

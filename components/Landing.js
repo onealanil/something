@@ -17,7 +17,7 @@ const Landing = () => {
 
               <div className="w-[100%] h-96 md:h-[33rem] relative">
                 <Image
-                  src="/images/bitcoincrashes.jpg"
+                  src="/images/card1.jpg"
                   alt="landing-photo"
                   layout="fill"
                   objectFit="cover"
