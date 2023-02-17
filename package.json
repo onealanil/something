@@ -9,11 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
     "@lottiefiles/lottie-player": "^1.7.1",
     "next": "13.1.6",
     "react": "18.2.0",
+    "react-awesome-reveal": "^4.2.3",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
+    "react-loading-skeleton": "^3.1.1",
     "react-router-dom": "^6.8.0",
     "react-share": "^4.4.1",
     "react-social-icons": "^5.15.0"

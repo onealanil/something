@@ -2,6 +2,7 @@ import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 import Image from "next/legacy/image";
 import Link from "next/link";
+import { Fade } from "react-awesome-reveal";
 
 const Landing = () => {
   return (
@@ -11,7 +12,7 @@ const Landing = () => {
           {/* left side  */}
           <div className="md:w-[80%] py-5 mt-3">
             <div className="flex flex-col gap-y-5">
-              <span className="font-frontTitleFont text-green text-[2rem] md:text-[3rem] font-bold leading-relaxed tracking-wide">
+              <span className="font-frontTitleFont text-green text-[2rem] md:text-[3rem] font-bold leading-relaxed tracking-wide scroll-smooth">
                 Bitcoin Bubble bursts: Crypto market crashes{" "}
               </span>
 
@@ -24,7 +25,6 @@ const Landing = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-
               <span className="font-frontTextFont leading-normal tracking-wide py-3">
                 The cryptocurrency market has been hit hard in recent days, as
                 the value of Bitcoin and other major digital currencies has
@@ -53,75 +53,89 @@ const Landing = () => {
           {/* right side --hidden in mobile devices*/}
           <div className="hidden md:flex w-[20%] py-5 mt-3 px-4 pl-3 flex-col gap-y-3">
             {/* one component  */}
-            <div className="flex flex-col gap-y-2 cursor-pointer select-none">
-              <span className="font-sideFont text-sm text-green hover:text-black">
-                February 21
-              </span>
-              <span className="font-sideFont font-semibold leading-relaxed tracking-wide hover:text-green">
-                Money Matters: Your guide to financial success
-              </span>
-              <span className="border border-b-gray-900"></span>
-            </div>
+            <Fade>
+              <div className="flex flex-col gap-y-2 cursor-pointer select-none">
+                <span className="font-sideFont text-sm text-green hover:text-black">
+                  February 21
+                </span>
+                <span className="font-sideFont font-semibold leading-relaxed tracking-wide hover:text-green">
+                  Money Matters: Your guide to financial success
+                </span>
+                <span className="border border-b-gray-900"></span>
+              </div>
+            </Fade>
             {/* one component  */}
-            <div className="flex flex-col gap-y-2 cursor-pointer select-none">
-              <span className="font-sideFont text-sm text-green hover:text-black">
-                April 1
-              </span>
-              <span className="font-sideFont font-semibold leading-relaxed tracking-wide hover:text-green">
-                The Wealthy Investor: Strategies for building wealth
-              </span>
-              <span className="border border-b-gray-900"></span>
-            </div>
+            <Fade>
+              <div className="flex flex-col gap-y-2 cursor-pointer select-none">
+                <span className="font-sideFont text-sm text-green hover:text-black">
+                  April 1
+                </span>
+                <span className="font-sideFont font-semibold leading-relaxed tracking-wide hover:text-green">
+                  The Wealthy Investor: Strategies for building wealth
+                </span>
+                <span className="border border-b-gray-900"></span>
+              </div>
+            </Fade>
             {/* one component  */}
-            <div className="flex flex-col gap-y-2 cursor-pointer select-none">
-              <span className="font-sideFont text-sm text-green hover:text-black">
-                Octuber 22
-              </span>
-              <span className="font-sideFont font-semibold leading-relaxed tracking-wide hover:text-green">
-                Finance 101: Mastering your money
-              </span>
-              <span className="border border-b-gray-900"></span>
-            </div>
+            <Fade>
+              <div className="flex flex-col gap-y-2 cursor-pointer select-none">
+                <span className="font-sideFont text-sm text-green hover:text-black">
+                  Octuber 22
+                </span>
+                <span className="font-sideFont font-semibold leading-relaxed tracking-wide hover:text-green">
+                  Finance 101: Mastering your money
+                </span>
+                <span className="border border-b-gray-900"></span>
+              </div>
+            </Fade>
             {/* one component  */}
-            <div className="flex flex-col gap-y-2 cursor-pointer select-none">
-              <span className="font-sideFont text-sm text-green hover:text-black">
-                November 11
-              </span>
-              <span className="font-sideFont font-semibold leading-relaxed tracking-wide hover:text-green">
-                Debt-Free Living: Achieving financial freedom
-              </span>
-              <span className="border border-b-gray-900"></span>
-            </div>
+            <Fade>
+              <div className="flex flex-col gap-y-2 cursor-pointer select-none">
+                <span className="font-sideFont text-sm text-green hover:text-black">
+                  November 11
+                </span>
+                <span className="font-sideFont font-semibold leading-relaxed tracking-wide hover:text-green">
+                  Debt-Free Living: Achieving financial freedom
+                </span>
+                <span className="border border-b-gray-900"></span>
+              </div>
+            </Fade>
             {/* one component  */}
-            <div className="flex flex-col gap-y-2 cursor-pointer select-none">
-              <span className="font-sideFont text-sm text-green hover:text-black">
-                December 22
-              </span>
-              <span className="font-sideFont font-semibold leading-relaxed tracking-wide hover:text-green">
-                The Money Maze: Navigating the world of finance
-              </span>
-              <span className="border border-b-gray-900"></span>
-            </div>
+            <Fade>
+              <div className="flex flex-col gap-y-2 cursor-pointer select-none">
+                <span className="font-sideFont text-sm text-green hover:text-black">
+                  December 22
+                </span>
+                <span className="font-sideFont font-semibold leading-relaxed tracking-wide hover:text-green">
+                  The Money Maze: Navigating the world of finance
+                </span>
+                <span className="border border-b-gray-900"></span>
+              </div>
+            </Fade>
             {/* one component  */}
-            <div className="flex flex-col gap-y-2 cursor-pointer select-none">
-              <span className="font-sideFont text-sm text-green hover:text-black">
-                April 1
-              </span>
-              <span className="font-sideFont font-semibold leading-relaxed tracking-wide hover:text-green">
-                The Wealthy Investor: Strategies for building wealth
-              </span>
-              <span className="border border-b-gray-900"></span>
-            </div>
+            <Fade>
+              <div className="flex flex-col gap-y-2 cursor-pointer select-none">
+                <span className="font-sideFont text-sm text-green hover:text-black">
+                  April 1
+                </span>
+                <span className="font-sideFont font-semibold leading-relaxed tracking-wide hover:text-green">
+                  The Wealthy Investor: Strategies for building wealth
+                </span>
+                <span className="border border-b-gray-900"></span>
+              </div>
+            </Fade>
             {/* one component  */}
-            <div className="flex flex-col gap-y-2 cursor-pointer select-none">
-              <span className="font-sideFont text-sm text-green hover:text-black">
-                April 2
-              </span>
-              <span className="font-sideFont font-semibold leading-relaxed tracking-wide hover:text-green">
-                The Wealthy Investor: Strategies for building wealth
-              </span>
-              <span className="border border-b-gray-900"></span>
-            </div>
+            <Fade>
+              <div className="flex flex-col gap-y-2 cursor-pointer select-none">
+                <span className="font-sideFont text-sm text-green hover:text-black">
+                  April 2
+                </span>
+                <span className="font-sideFont font-semibold leading-relaxed tracking-wide hover:text-green">
+                  The Wealthy Investor: Strategies for building wealth
+                </span>
+                <span className="border border-b-gray-900"></span>
+              </div>
+            </Fade>
           </div>
           {/* right side end  */}
         </div>

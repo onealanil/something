@@ -2,6 +2,7 @@ import React from "react";
 import Card from "./Card";
 import { BsArrowRight } from "react-icons/bs";
 import Link from "next/link";
+import { Fade } from "react-awesome-reveal";
 
 const HotPost = () => {
   const data = [
@@ -26,8 +27,10 @@ const HotPost = () => {
       <div className="w-full flex items-center justify-center">
         <div className="w-[90%] flex flex-col items-center justify-center">
           <div className="flex text-[2rem] md:text-[3rem] font-bold leading-relaxed tracking-wide gap-x-2">
-            <span className="font-sideFont">Hot </span>
-            <span className="font-sideFont text-green">Topics</span>
+            <Fade>
+              <span className="font-sideFont">Hot </span>
+              <span className="font-sideFont text-green">Topics</span>
+            </Fade>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 my-4">
             {data.map((val) => {

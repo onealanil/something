@@ -1,4 +1,6 @@
 import React, { useEffect, useRef } from "react";
+import { Fade } from "react-awesome-reveal";
+
 
 const Quiz = () => {
   const ref = useRef(null);
@@ -10,8 +12,10 @@ const Quiz = () => {
     <>
       <div className="w-[100%] flex items-center justify-center">
         <div className="flex text-[1rem] md:text-[2rem] font-bold leading-relaxed tracking-wide gap-x-2">
+          <Fade>
           <span className="font-sideFont">Test Your </span>
           <span className="font-sideFont text-green">Financial Skill</span>
+          </Fade>
         </div>
       </div>
       <div className="w-[100%] flex items-center justify-center">
@@ -29,7 +33,8 @@ const Quiz = () => {
             </div>
           </div>
           <div className="w-full md:w-[45%] flex">
-            <div className="w-[100%] flex flex-col p-5 gap-y-4 md:gap-y-5">
+            <div className="w-[100%] flex flex-col p-5 gap-y-4 md:gap-y-5 items-start justify-center">
+              <Fade>
               <span className="font-hotTopicsFont leading-relaxed tracking-wide">
                 The quiz has been carefully designed to cover a range of topics,
                 including budgeting, saving, investing, and managing debt.
@@ -41,6 +46,7 @@ const Quiz = () => {
                 valuable insights into your financial skills and learn more
                 about the areas where you need to focus your attention.
               </span>
+              </Fade>
               <div className="flex pb-5">
                 <span className="py-3 px-5 bg-green font-hotTopicsFont text-white tracking-wide rounded-md cursor-pointer">
                   Take a Quiz
