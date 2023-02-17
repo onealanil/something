@@ -61,7 +61,7 @@ const about = () => {
           </div>
           {/* left side end  */}
           {/* right side start */}
-          <div className="w-full md:w-[40%] mt-[-3rem]">
+          <div className="w-full md:w-[40%] mt-[-1rem]">
             <div className="w-[100%] h-96 md:h-[33rem] relative">
               <Image
                 src="/images/about.svg"
