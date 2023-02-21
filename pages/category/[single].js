@@ -59,7 +59,7 @@ const SingleCategory = () => {
   return (
     <>
       <div className="mt-16 mb-4 w-full flex items-center justify-center">
-        <div className="w-[90%]">
+        <div className="w-[90%] xl:w-[85%] 2xl:w-[70%]">
           <div className="flex gap-x-1 pt-3">
             <span className="font-sideFont  text-[#CCCBCB]">
               <Link href="/allblog">

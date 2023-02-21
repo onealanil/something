@@ -57,7 +57,7 @@ const category = () => {
   return (
     <>
       <div className="mt-16 w-full flex items-center justify-center">
-        <div className="w-[90%]">
+        <div className="w-[90%] xl:w-[85%] 2xl:w-[70%]">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 my-10">
             {data.map((val) => {
               return <Category key={val.id} props={val} />;

@@ -1,6 +1,7 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Card from "../components/Card";
 import { BsFillPlusCircleFill } from "react-icons/bs";
+import Loading from "../components/Loading";
 
 const blog = () => {
   const data = [
@@ -53,15 +54,17 @@ const blog = () => {
   return (
     <>
       <div className="mt-16 mb-4 w-full flex items-center justify-center">
-        <div className="w-[90%]">
+        <div className="w-[90%] xl:w-[85%] 2xl:w-[70%]">
           <div className="flex gap-x-1 pt-3">
             <span className="font-sideFont">All</span>
             <span className="font-sideFont text-green">Posts</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 my-4">
-            {data.map((val) => {
-              return <Card key={val.id} props={val} />;
-            })}
+            <Suspense fallback={<Loading cards={9} />}>
+              {data.map((val) => {
+                return <Card key={val.id} props={val} />;
+              })}
+            </Suspense>
           </div>
           <div className="flex items-center justify-center">
             <BsFillPlusCircleFill

@@ -25,7 +25,7 @@ const HotPost = () => {
   return (
     <>
       <div className="w-full flex items-center justify-center">
-        <div className="w-[90%] flex flex-col items-center justify-center">
+        <div className="w-[90%] xl:w-[85%] 2xl:w-[70%] flex flex-col items-center justify-center">
           <div className="flex text-[2rem] md:text-[3rem] font-bold leading-relaxed tracking-wide gap-x-2">
             <Fade>
               <span className="font-sideFont">Hot </span>
@@ -48,7 +48,7 @@ const HotPost = () => {
         </div>
       </div>
       <div className="flex items-center justify-center">
-        <hr className="h-[2px] my-5 border-solid w-[90%] font-bold bg-gray-600"></hr>
+        <hr className="h-[2px] my-5 border-solid w-[90%] xl:w-[85%] 2xl:w-[70%] font-bold bg-gray-600"></hr>
       </div>
     </>
   );

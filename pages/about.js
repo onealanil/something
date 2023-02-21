@@ -11,7 +11,7 @@ const about = () => {
             About us
           </span>
         </div>
-        <div className="w-[90%] flex flex-col-reverse md:flex-row py-5">
+        <div className="w-[90%] xl:w-[85%] 2xl:w-[60%] flex flex-col-reverse md:flex-row py-5">
           {/* left side start */}
           <div className="w-full md:w-[60%] flex flex-col gap-y-5">
             <div className="hidden items-center justify-center md:flex">
@@ -70,14 +70,14 @@ const about = () => {
           {/* right side start */}
           <div className="w-full md:w-[40%] mt-[-1rem] md:mt-0">
             <Fade>
-            <div className="w-[100%] h-96 md:h-[33rem] relative">
-              <Image
-                src="/images/about.svg"
-                layout="fill"
-                objectFit="fill"
-                className="w-full h-full object-cover"
-              />
-            </div>
+              <div className="w-[100%] h-96 md:h-[33rem] relative">
+                <Image
+                  src="/images/about.svg"
+                  layout="fill"
+                  objectFit="fill"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </Fade>
           </div>
           {/* right side end  */}

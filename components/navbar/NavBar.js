@@ -30,7 +30,7 @@ const NavBar = () => {
       <nav className="w-full mx-auto h-16 fixed bg-nav-bg flex justify-between items-center py-5 select-none  top-0 z-50 shadow-sm">
         {/* logo left side */}
         <Link href="/">
-          <div className="ml-6 md:ml-16 cursor-pointer">
+          <div className="ml-6 md:ml-16 xl:ml-24 cursor-pointer">
             <span className="font-navFont text-green font-bold text-xl md:text-2xl">
               Finance{" "}
             </span>

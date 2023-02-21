@@ -16,12 +16,13 @@ import {
   EmailShareButton,
   TelegramShareButton,
 } from "react-share";
+import Morearticle from "../components/Morearticle";
 
 const single = () => {
   return (
     <>
       <div className="w-full flex items-center justify-center mt-16">
-        <div className="w-[90%] flex gap-x-3 items-center justify-start my-2 mt-3 text-[#CCCBCB] mb-[-8px] font-hotTopicsFont text-[0.75rem]">
+        <div className="w-[90%] xl:w-[85%] 2xl:w-[70%] flex gap-x-3 items-center justify-start my-2 mt-3 text-[#CCCBCB] mb-[-8px] font-hotTopicsFont text-[0.75rem]">
           <i className="cursor-pointer hover:text-green">
             <BiHomeAlt size={20} />
           </i>
@@ -34,7 +35,7 @@ const single = () => {
         </div>
       </div>
       <div className="w-full flex justify-center items-center">
-        <div className="flex w-[90%] gap-x-2">
+        <div className="flex w-[90%] xl:w-[85%] 2xl:w-[70%] gap-x-3">
           {/* left side  */}
           <div className="md:w-[80%] py-5">
             <div className="flex flex-col gap-y-2">
@@ -225,8 +226,8 @@ const single = () => {
                 </div>
               </div>
               {/* comment end  */}
-            {/* comment start  */}
-            <div className="flex my-2 gap-2 mt-1 mb-5">
+              {/* comment start  */}
+              <div className="flex my-2 gap-2 mt-1 mb-5">
                 <div className="w-12 h-12 relative">
                   <Image
                     src="/images/card3.jpg"
@@ -259,78 +260,14 @@ const single = () => {
           {/* left side end  */}
 
           {/* right side --hidden in mobile devices*/}
-          <div className="hidden md:flex w-[20%] py-5  px-4 pl-3 flex-col gap-y-3">
-            <div className="flex items-center mb-4 justify-center  cursor-pointer select-none">
-              <span className="font-hotTopicsFont font-[700] text-[1.3rem]">
-                More Articles
-              </span>
-            </div>
-            {/* one component  */}
-            <div className="flex flex-col gap-y-2 cursor-pointer select-none">
-              <span className="font-sideFont text-sm text-green hover:text-black">
-                February 21
-              </span>
-              <span className="font-sideFont font-semibold leading-relaxed tracking-wide hover:text-green">
-                Money Matters: Your guide to financial success
-              </span>
-              <span className="border border-b-gray-900"></span>
-            </div>
-            {/* one component  */}
-            <div className="flex flex-col gap-y-2 cursor-pointer select-none">
-              <span className="font-sideFont text-sm text-green hover:text-black">
-                April 1
-              </span>
-              <span className="font-sideFont font-semibold leading-relaxed tracking-wide hover:text-green">
-                The Wealthy Investor: Strategies for building wealth
-              </span>
-              <span className="border border-b-gray-900"></span>
-            </div>
-            {/* one component  */}
-            <div className="flex flex-col gap-y-2 cursor-pointer select-none">
-              <span className="font-sideFont text-sm text-green hover:text-black">
-                Octuber 22
-              </span>
-              <span className="font-sideFont font-semibold leading-relaxed tracking-wide hover:text-green">
-                Finance 101: Mastering your money
-              </span>
-              <span className="border border-b-gray-900"></span>
-            </div>
-            {/* one component  */}
-            <div className="flex flex-col gap-y-2 cursor-pointer select-none">
-              <span className="font-sideFont text-sm text-green hover:text-black">
-                November 11
-              </span>
-              <span className="font-sideFont font-semibold leading-relaxed tracking-wide hover:text-green">
-                Debt-Free Living: Achieving financial freedom
-              </span>
-              <span className="border border-b-gray-900"></span>
-            </div>
-            {/* one component  */}
-            <div className="flex flex-col gap-y-2 cursor-pointer select-none">
-              <span className="font-sideFont text-sm text-green hover:text-black">
-                December 22
-              </span>
-              <span className="font-sideFont font-semibold leading-relaxed tracking-wide hover:text-green">
-                The Money Maze: Navigating the world of finance
-              </span>
-              <span className="border border-b-gray-900"></span>
-            </div>
-            {/* one component  */}
-            <div className="flex flex-col gap-y-2 cursor-pointer select-none">
-              <span className="font-sideFont text-sm text-green hover:text-black">
-                April 1
-              </span>
-              <span className="font-sideFont font-semibold leading-relaxed tracking-wide hover:text-green">
-                The Wealthy Investor: Strategies for building wealth
-              </span>
-              <span className="border border-b-gray-900"></span>
-            </div>
+          <div className="hidden md:flex w-[20%] py-5  px-4 pl-3 flex-col gap-y-3 h-max sticky top-20">
+            <Morearticle />
           </div>
           {/* right side end  */}
         </div>
       </div>
       <div className="flex items-center justify-center">
-        <hr className="h-[2px] my-8 border-solid w-[90%] font-bold bg-gray-600"></hr>
+        <hr className="h-[2px] my-8 border-solid w-[90%] xl:w-[85%] 2xl:w-[70%] font-bold bg-gray-600"></hr>
       </div>
       <NextTopic />
     </>

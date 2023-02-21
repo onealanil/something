@@ -23,7 +23,7 @@ const NextTopic = () => {
   return (
     <>
       <div className="w-full flex items-center justify-center">
-        <div className="w-[90%] flex flex-col items-center justify-center">
+        <div className="w-[90%] xl:w-[85%] 2xl:w-[70%] flex flex-col items-center justify-center">
           <div className="flex text-[1rem] md:text-[2rem] font-bold leading-relaxed tracking-wide gap-x-2">
             <span className="font-sideFont">Read </span>
             <span className="font-sideFont text-green">Next</span>
