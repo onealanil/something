@@ -4,7 +4,7 @@ import { question } from "../../components/quiz/question";
 import Image from "next/legacy/image";
 import { AiOutlineDoubleRight, AiOutlineRedo } from "react-icons/ai";
 
-const quiz1 = () => {
+const Quiz1 = () => {
   const [currentquestion, setCurrentquestion] = useState(0);
   const [showAnswer, setShowAnswer] = useState(false);
   const [score, setScore] = useState(0);
@@ -23,6 +23,7 @@ const quiz1 = () => {
     } else {
       if (selectedAnswer) {
         setCurrentquestion(currentquestion + 1);
+        setSelectedAnswer(null)
       }
     }
   };
@@ -265,4 +266,4 @@ const quiz1 = () => {
   );
 };
 
-export default quiz1;
+export default Quiz1;
