@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Morearticle from "../../components/Morearticle";
 import { question } from "../../components/quiz/question";
 import Image from "next/legacy/image";
@@ -53,9 +53,9 @@ const quiz1 = () => {
                 understanding of personal finance and help you gauge your level
                 of financial literacy. From basic budgeting and investing
                 concepts to more complex financial topics, this quiz will put
-                your knowledge to the test. So if you're ready to see how you
-                stack up in terms of financial smarts, take our quiz and see if
-                you have what it takes to become a financial pro
+                your knowledge to the test. So if you &lsquo;re ready to see how
+                you stack up in terms of financial smarts, take our quiz and see
+                if you have what it takes to become a financial pro
               </span>
 
               <div className="flex gap-x-4 items-center justify-start pb-4">
@@ -82,8 +82,10 @@ const quiz1 = () => {
                             <div className="absolute bottom-0 w-full h-24 bg-opacity-70 bg-black items-center justify-center flex">
                               <div className="flex items-start gap-y-2 justify-center flex-col ml-6">
                                 <span className="font-frontTitleFont text-[1.75rem] font-bold leading-relaxed tracking-wide text-white">
-                                  "<span className="text-green">Bravo!</span>{" "}
-                                  Look like you get some financial guidance"
+                                  &ldquo;{" "}
+                                  <span className="text-green">Bravo!</span>{" "}
+                                  Look like you get some financial guidance
+                                  &ldquo;
                                 </span>
                               </div>
                             </div>
@@ -102,8 +104,10 @@ const quiz1 = () => {
                             <div className="absolute bottom-0 w-full h-24 bg-opacity-70 bg-black items-center justify-center flex">
                               <div className="flex items-start gap-y-2 justify-center flex-col ml-6">
                                 <span className="font-frontTitleFont text-[1.75rem] font-bold leading-relaxed tracking-wide text-white">
-                                  "<span className="text-red-500">Opps!</span>{" "}
-                                  Look like you need more financial guidance"
+                                  &ldquo;{" "}
+                                  <span className="text-red-500">Opps!</span>{" "}
+                                  Look like you need more financial guidance
+                                  &ldquo;
                                 </span>
                               </div>
                             </div>
