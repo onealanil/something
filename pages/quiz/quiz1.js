@@ -23,7 +23,7 @@ const Quiz1 = () => {
     } else {
       if (selectedAnswer) {
         setCurrentquestion(currentquestion + 1);
-        setSelectedAnswer(null)
+        setSelectedAnswer(null);
       }
     }
   };
@@ -70,12 +70,12 @@ const Quiz1 = () => {
                 <>
                   <div>
                     <div className="flex items-center justify-center flex-col gap-y-4">
-                      {score > 2 ? (
+                      {score > question.length / 2 ? (
                         <>
                           <div className="w-[100%] h-96 md:h-[33rem] relative my-2">
                             <Image
                               src="/images/highMarks.jpg"
-                              alt="landing-photo"
+                              alt="quiz-photo"
                               layout="fill"
                               objectFit="cover"
                               className="w-full h-full object-cover"
@@ -97,7 +97,7 @@ const Quiz1 = () => {
                           <div className="w-[100%] h-96 md:h-[33rem] relative my-2">
                             <Image
                               src="/images/lowMarks.jpg"
-                              alt="landing-photo"
+                              alt="quiz-photo"
                               layout="fill"
                               objectFit="cover"
                               className="w-full h-full object-cover"
